@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  </head>
+  <body>
+  
+    <h1>CSS Pop up Image</h1>
+    <p> Alright so I really like when you hover over an image of a plane at piper.com, it tells you the model without clicking. I just think it's a cool element. Unfortunateley, why you go to inspect, the pop up menu closes so I cannot see what subheader to go to to find the CSS. I did my best job to replicate it but I might need some help later on.</p>
+    <div id="popup">
+      <a class="pc12" href="#"><img src="https://finnoff-products.com/wp-content/uploads/2018/11/pc-12-image-1.jpg" width="320" height="212.6" alt=""><span><img src="https://www.graphicsmaxx.com/image-smp/pilatus-pc12-aircraft-logo_51637_200x200.JPG" width="50" height="50" alt=""></span></a>
+   <style>
+      #popup {
+          position:relative;
+          margin:75px auto;
+          width:252px; height:252px;
+        }
+        .pc12 img { 
+          border:1px solid #000;
+          margin:3px;
+          float:left;
+        }
+        .pc12 span { 
+          position:absolute;
+          visibility:hidden;
+        }
+        .pc12:hover, .pc12:hover span { 
+          visibility:visible;
+          top:0; left:270px; 
+          z-index:1;
+        }
+        </style>
+    </div>
+    
+       
+      
+      </html>
